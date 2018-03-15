@@ -1,6 +1,6 @@
-# ej2-ng-grids-column-validation
+# ej2-ng-grids-webapiadaptor
 
-Essential JavaScript 2 Angular Grid for colun validation
+Essential JavaScript 2 Angular Grid for webapiadaptor
 
 ## Installing
 
