@@ -1,5 +1,4 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { isNullOrUndefined } from '@syncfusion/ej2-base';
 import { GridComponent } from '@syncfusion/ej2-ng-grids';
 import { orderData } from './data';
 import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
@@ -10,16 +9,13 @@ import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
                   <e-columns>
                   <e-column field='OrderID' headerText='ID' isPrimaryKey=true width='120' textAlign='Right'></e-column>
                   <e-column field='CustomerID' headerText='Name' width='160'></e-column>
-                   <e-column field='Active' headerText='' type='checkbox' width='160'></e-column>
+                   <e-column field='EmplaoyeeID' headerText='EmplaoyeeID' width='160'></e-column>
                   </e-columns>
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 
     public data: DataManager;
-    public edit: Object;
-    public toolbar: string[];
-    public selection: Object;
     public pageSettings: Object;
     public pageSizes: number[] = [5, 10, 15];
     @ViewChild('grid')
